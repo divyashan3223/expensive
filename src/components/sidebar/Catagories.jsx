@@ -2,7 +2,7 @@ import React from "react";
 
 const Catagories = ({ content, imgSrc }) => {
   return (
-    <div className=" gap-1 h-[26px] flex items-center  w-[700px] ">
+    <div className=" gap-2 h-[26px] flex items-center  w-[700px]">
       <img
         src={imgSrc}
         alt={content}

@@ -1,6 +1,6 @@
 import React, { Children } from "react";
 
-import RightBar from "./components/rightbarr/page";
+// import RightBar from "./components/RightBar/page";
 import Layout from "./components/Layout";
 
 function App() {

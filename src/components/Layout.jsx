@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./navbar/Navbar";
 import LeftBar from "./leftbar/page";
-import RightBar from "./rightbarr/page";
+import RightBar from "./RightBar/page";
 import Menus from "./Menus/Menus";
 
 const Layout = ({ children }) => {
