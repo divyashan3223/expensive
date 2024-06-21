@@ -6,11 +6,9 @@ const Catagories = ({ content, imgSrc }) => {
       <img
         src={imgSrc}
         alt={content}
-        className="h-[16px]  object-cover leading-3"
+        className="h-[12px]  object-cover leading-3"
       />
-      <h2 className="text-[13px] ">
-        {content}
-      </h2>
+      <h2 className="text-[12px] ">{content}</h2>
     </div>
   );
 };

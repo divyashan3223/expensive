@@ -8,8 +8,8 @@ import supers from "../../assets/Vector.png";
 const LeftBar = () => {
   return (
     <div className=" top-8">
-      <div className=" h-[1035px] w-[150px]  pl-4 border-r-2 mt-6  ">
-        <p className=" text-[14px] mb-5 font-semibold">Catagories</p>
+      <div className=" h-[1035px] w-[164px]  pl-5 border-r-2  ">
+        <p className=" text-[14px] mb-5 font-semibold pt-6  ">Catagories</p>
         <div className="flex flex-col gap-1">
           <Catagories content={"Restaurants"} imgSrc={eat} />
           <Catagories content={"Medical Service"} imgSrc={kit} />
