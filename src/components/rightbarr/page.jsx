@@ -6,8 +6,10 @@ const RightBar = () => {
     <div className="w-full p-5">
       <div className="flex flex-col  ">
         <div className=" pt-2">
-          <h1 className="text-[15px] font-medium">Expensive Analyzer</h1>
-          <hr className="mt-2 border-2" />
+          <h1 className="text-[13px] font-semibold border-b-2 pb-2">
+            Expensive Analyzer
+          </h1>
+
           <aside className="flex pt-5 gap-8">
             <Expensive data={"Total Income"} amount={"$28,000.54"} />
             <Expensive data={"Total  Expenses"} amount={"$28,000.54"} />
