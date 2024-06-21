@@ -1,4 +1,6 @@
 import React from "react";
+import StatusLabel from "../StatusLabel";
+import { EllipsisHorizontalIcon } from "@heroicons/react/16/solid";
 
 let data = [
   {
@@ -85,32 +87,62 @@ let data = [
 
 const DataTable = () => {
   return (
-    <div>
-      <h2>Employee Data</h2>
-      <table className="table-auto border-collapse w-full rounded-t-md">
-        <thead className="bg-slate-100 rounded-t-md">
-          <tr>
-            <th className="  px-4 py-2">ID</th>
-            <th className="  px-4 py-2">Description</th>
-            <th className="  px-4 py-2">Category</th>
-            <th className="  px-4 py-2">Amount</th>
-            <th className="  px-4 py-2">Status</th>
-            <th className="  px-4 py-2">Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((employee) => (
-            <tr key={employee.id}>
-              <td className="  px-4 py-2">{employee.id}</td>
-              <td className="  px-4 py-2">{employee.description}</td>
-              <td className="  px-4 py-2">{employee.category}</td>
-              <td className="  px-4 py-2">{employee.amount}</td>
-              <td className="  px-4 py-2">{employee.status}</td>
-              <td className="  px-4 py-2">{employee.date}</td>
+    <div className="w-full">
+      <h2 className="font-semibold text-sm pt-3">Recent Transcation</h2>
+      <div className="overflow-x-auto rounded-lg border  mt-5 mr-5">
+        <table className="w-full border-collapse  text-left     ">
+          <thead className="text-[15px]   bg-[#FAFAFA]">
+            <tr>
+              <th scope="col" className=" font-semibold px-4 py-4">
+                #
+              </th>
+              <th scope="col" className=" font-semibold px-4 py-4">
+                Description
+              </th>
+              <th scope="col" className=" font-semibold px-4 py-4">
+                Category
+              </th>
+              <th scope="col" className="  font-semibold px-4 py-4">
+                Amount
+              </th>
+              <th scope="col" className=" font-semibold px-4 py-4">
+                Status
+              </th>
+              <th scope="col" className="  font-semibold px-4 py-4">
+                Date
+              </th>
+              <th scope="col" className="  font-semibold px-4 py-4"></th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {data.map((employee) => (
+              <tr key={employee.id} className="text-start">
+                <td className="text-sm font-medium   px-4 py-5">
+                  {employee.id}
+                </td>
+                <td className="text-sm font-medium  px-4 py-5">
+                  {employee.description}
+                </td>
+                <td className="text-sm font-medium  px-4 py-5">
+                  {employee.category}
+                </td>
+                <td className="text-sm font-medium  px-4 py-5">
+                  {employee.amount}
+                </td>
+                <td className=" px-4 py-5">
+                  <StatusLabel />
+                </td>
+                <td className="text-sm font-normal  px-4 py-5">
+                  {employee.date}
+                </td>
+                <td>
+                  <EllipsisHorizontalIcon className="h-4 w-4 text-gray-700 cursor-pointer" />
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };

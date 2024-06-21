@@ -1,10 +1,9 @@
 import React from "react";
 
-const Catagories = ({ content, img }) => {
+const Catagories = ({ content }) => {
   return (
-    <div>
-      <img src={img} alt="" />
-      <h2>{content}</h2>
+    <div className=" gap-9 h-[26px] ">
+      <h2 className="text-[13px]">{content}</h2>
     </div>
   );
 };

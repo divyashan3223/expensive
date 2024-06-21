@@ -4,20 +4,19 @@ import DataTable from "../Trancation/page";
 
 const RightBar = () => {
   return (
-    <div>
-      <div className="flex flex-col  relative left-28 -z-10  ">
-        <div className="maincontent   grow-4 ">
-          <div className="p-10">
-            <h1>Expensive Analyzer</h1>
-            <hr />
-            <aside className="flex pt-5 gap-12">
-              <Expensive data={"Total Income"} amount={"$1,000.54"} />
-              <Expensive data={"Total  Expenses"} amount={"$1,000.54"} />
-              <Expensive data={"Saving Amount"} amount={"$1,000.54"} />
-            </aside>
-          </div>
+    <div className="w-full ">
+      <div className="flex flex-col  ">
+        <div className=" pt-8">
+          <h1 className="text-[15px] font-medium">Expensive Analyzer</h1>
+          <hr className="mt-2 border-2" />
+          <aside className="flex pt-5 gap-8">
+            <Expensive data={"Total Income"} amount={"$28,000.54"} />
+            <Expensive data={"Total  Expenses"} amount={"$28,000.54"} />
+            <Expensive data={"Saving Amount"} amount={"$28,000.54"} />
+          </aside>
         </div>
-        <div className="p-10">
+
+        <div>
           <DataTable />
         </div>
       </div>

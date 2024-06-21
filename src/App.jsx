@@ -1,12 +1,12 @@
-import React from "react";
-import MainPage from "./pages/MainPage";
-import Expensive from "./components/mainbar/Expensive";
-import DataTable from "./components/Trancation/page";
+import React, { Children } from "react";
+
+import RightBar from "./components/rightbarr/page";
+import Layout from "./components/Layout";
 
 function App() {
   return (
-    <div className="App">
-      <MainPage />
+    <div className="App w-full">
+      <Layout />
     </div>
   );
 }

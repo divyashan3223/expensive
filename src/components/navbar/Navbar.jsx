@@ -5,9 +5,9 @@ import email from "../../assets/Frame 2.png";
 import search from "../../assets/search.png";
 const Navbar = () => {
   return (
-    <div className="fixed top-0 w-full bg-white">
-      <nav className="flex justify-between pt-4 pl-6 pb-2 pr-6">
-        <img src={logo} alt="" className="h-10" />
+    <div className="sticky top-0 w-full bg-white border-b-2">
+      <nav className="flex justify-between pt-4 pl-6 pr-6">
+        <img src={logo} alt="" className="h-8" />
         <div className="dataside   w-64  justify-between  items-center  flex">
           <div className="flex items-center border w-40 rounded-2xl p-1  pl-2">
             <img src={search} alt="" className="h-4 " />
