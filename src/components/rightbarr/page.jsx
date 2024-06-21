@@ -1,12 +1,11 @@
-import React from "react";
 import Expensive from "../mainbar/Expensive";
 import DataTable from "../Trancation/page";
 
 const RightBar = () => {
   return (
-    <div className="w-full ">
+    <div className="w-full p-5">
       <div className="flex flex-col  ">
-        <div className=" pt-8">
+        <div className=" pt-2">
           <h1 className="text-[15px] font-medium">Expensive Analyzer</h1>
           <hr className="mt-2 border-2" />
           <aside className="flex pt-5 gap-8">
