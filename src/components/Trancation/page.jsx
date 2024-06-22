@@ -91,7 +91,7 @@ const DataTable = () => {
       <h2 className="font-semibold text-sm pt-5">Recent Transcation</h2>
       <div className="overflow-x-auto rounded-lg border  mt-5 mr-5">
         <table className="w-full border-collapse  text-left     ">
-          <thead className="text-[15px]   bg-[#FAFAFA]">
+          <thead className="text-[13px]   bg-[#FAFAFA]">
             <tr>
               <th scope="col" className=" font-semibold px-6 pr-2 py-4">
                 #
@@ -124,14 +124,14 @@ const DataTable = () => {
                   {employee.description}
                   <p className="font-normal">Withdrawl</p>
                 </td>
-                <td className="text-sm font-medium  px-6 py-5">
+                <td className="text-sm font-semibold  px-6 py-5">
                   {employee.category}
                 </td>
-                <td className="text-sm font-medium  px-6 py-5">
+                <td className="text-sm font-semibold  px-6 py-5">
                   {employee.amount}
                 </td>
                 <td className=" px-6 py-5">
-                  <StatusLabel />
+                  <StatusLabel status={"success"} />
                 </td>
                 <td className="text-sm font-normal  px-6 py-5">
                   {employee.date}
